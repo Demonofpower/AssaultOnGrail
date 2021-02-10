@@ -7,7 +7,11 @@
 
 int main()
 {
-    const char* dllPath = "C:\\Users\\Juli\\source\\repos\\AssaultOnGrail\\Debug\\AssaultOnGrail.In.dll";
+	std::cout << "dll path:" << std::endl;
+    std::string dllPathStr;
+	std::cin >> dllPathStr;
+    const char* dllPath = dllPathStr.c_str();
+	
     DWORD procId = 0;
 
     while (!procId)
